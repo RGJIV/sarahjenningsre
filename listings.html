@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Current luxury listings by Sarah Jennings – Cashiers Valley Real Estate.">
+    <meta name="description" content="Current luxury listings by Sarah Jennings in Cashiers Valley, NC.">
     <title>Properties • Sarah Jennings Real Estate • Cashiers Valley, NC</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
-        body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; font-variant-numeric: lining-nums tabular-nums; }
+        body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
         .hero { 
@@ -20,14 +20,11 @@
         .gold { color: #D4AF77; }
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
-        .hamburger { cursor: pointer; }
-        .mobile-menu { display: none; }
-        .mobile-menu.active { display: flex; }
     </style>
 </head>
 <body class="bg-[#F8F1E3] text-[#0A2540]">
 
-    <!-- NAV – Properties first -->
+    <!-- NAV -->
     <nav class="bg-white shadow fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -54,43 +51,28 @@
         </div>
     </nav>
 
-    <!-- SHORT CENTERED HERO -->
+    <!-- HERO -->
     <section class="hero flex items-center justify-center text-white pt-20">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6">Featured Properties</h1>
-            <p class="text-4xl gold tracking-wide">Exclusive listings in Cashiers & Highlands</p>
+            <p class="text-4xl gold tracking-wide">My current exclusive listings</p>
         </div>
     </section>
 
-    <!-- YOUR REAL LISTINGS -->
-    <section class="max-w-7xl mx-auto px-6 py-24">
-        <div class="grid md:grid-cols-2 gap-8">
+    <!-- LIVE LISTINGS TEASER + BIG BUTTON -->
+    <section class="max-w-5xl mx-auto px-6 py-24 text-center">
+        <p class="text-xl max-w-2xl mx-auto mb-12">
+            All my current listings are updated instantly on CashiersValley.com. 
+            Click below to see every available property I represent right now.
+        </p>
 
-            <!-- Listing 1 -->
-            <div class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
-                <img src="https://picsum.photos/id/1016/800/500" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
-                <div class="p-8">
-                    <p class="text-xs gold tracking-widest">3 BED • 3 BATH • SAPPHIRE</p>
-                    <p class="text-3xl font-semibold mt-1">$1,095,000</p>
-                    <p class="text-sm mt-2 text-gray-600">51 Clawsfoot Court</p>
-                    <a href="https://cashiersvalley.com/listing/1001993/51-clawsfoot-court-sapphire-nc-28774/" 
-                       class="mt-6 inline-block text-sm gold hover:underline">View Full Details on CashiersValley.com →</a>
-                </div>
-            </div>
+        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" 
+           target="_blank"
+           class="inline-block px-16 py-6 text-xl font-semibold border-2 border-[#0A2540] bg-white text-[#0A2540] rounded-2xl hover:bg-[#0A2540] hover:text-white transition">
+            View All My Current Listings
+        </a>
 
-            <!-- Listing 2 -->
-            <div class="group bg-white rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
-                <img src="https://picsum.photos/id/870/800/500" class="w-full h-80 object-cover group-hover:scale-105 transition duration-500">
-                <div class="p-8">
-                    <p class="text-xs gold tracking-widest">4 BED • 5 BATH • CASHIERS</p>
-                    <p class="text-3xl font-semibold mt-1">$2,695,000</p>
-                    <p class="text-sm mt-2 text-gray-600">MLS #1001361</p>
-                    <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" 
-                       class="mt-6 inline-block text-sm gold hover:underline">View Full Details on CashiersValley.com →</a>
-                </div>
-            </div>
-
-        </div>
+        <p class="mt-8 text-sm text-gray-500">Opens in a new tab • Always 100% up-to-date</p>
     </section>
 
     <footer class="bg-white py-12 text-center text-xs text-gray-500 border-t">
