@@ -9,18 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
-        
-        body { 
-            font-family: 'Cormorant Garamond', serif; 
-            line-height: 1.75;
-            font-variant-numeric: lining-nums tabular-nums; /* This fixes ALL numbers */
-        }
+        body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; font-variant-numeric: lining-nums tabular-nums; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
-        
         .hero { background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)), url('assets/images/hero/hero-main.jpg') center/cover no-repeat fixed; }
         .gold { color: #D4AF77; }
-        
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
         .hamburger { cursor: pointer; }
@@ -30,39 +23,27 @@
 </head>
 <body class="bg-[#F8F1E3] text-[#0A2540]">
 
-    <!-- NAV -->
+    <!-- NAV – Properties first -->
     <nav class="bg-white shadow fixed w-full z-50">
-        <!-- NEW NAV ORDER -->
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="logo-name text-4xl tracking-tighter text-[#0A2540]">Sarah Jennings</div>
+                <div class="pl-3 border-l border-[#D4AF77]">
+                    <span class="block text-xs tracking-[3px] gold">REAL ESTATE</span>
+                </div>
+            </a>
             <div class="hidden md:flex gap-10 text-sm font-medium">
                 <a href="listings.html" class="nav-link">Properties</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="community.html" class="nav-link">Community</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
-            </a>
-
-            <div class="hidden md:flex gap-10 text-sm font-medium">
-                <a href="about.html" class="nav-link">About</a>
-                <a href="listings.html" class="nav-link">Properties</a>
-                <a href="community.html" class="nav-link">Community</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-            </div>
-
-            <!-- Phone with perfect lining numbers -->
-            <a href="tel:8285534331" 
-               class="hidden md:block px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">
-                828.553.4331
-            </a>
-
-            <div class="md:hidden hamburger" id="hamburger">
-                <i class="fa-solid fa-bars text-3xl"></i>
-            </div>
+            <a href="tel:8285534331" class="hidden md:block px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">828.553.4331</a>
+            <div class="md:hidden hamburger" id="hamburger"><i class="fa-solid fa-bars text-3xl"></i></div>
         </div>
-
-        <!-- Mobile Menu -->
         <div class="mobile-menu bg-white border-t flex-col items-center py-6 text-lg font-medium md:hidden" id="mobile-menu">
-            <a href="about.html" class="py-3 nav-link">About</a>
             <a href="listings.html" class="py-3 nav-link">Properties</a>
+            <a href="about.html" class="py-3 nav-link">About</a>
             <a href="community.html" class="py-3 nav-link">Community</a>
             <a href="contact.html" class="py-3 nav-link">Contact</a>
             <a href="tel:8285534331" class="mt-6 px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">828.553.4331</a>
@@ -76,14 +57,8 @@
             <p class="text-4xl gold tracking-wide mb-8">Luxury Real Estate • Cashiers Valley, NC</p>
             <p class="max-w-xl mx-auto text-xl opacity-90">Timeless expertise. Personal service. Your trusted guide to extraordinary mountain homes in the Southern Blue Ridge.</p>
             <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="contact.html" 
-                   class="px-10 py-5 text-lg font-semibold border-2 border-white bg-white text-[#0A2540] rounded-2xl hover:bg-transparent hover:text-white transition">
-                    Schedule a Private Consultation
-                </a>
-                <a href="listings.html" 
-                   class="px-10 py-5 text-lg font-semibold border-2 border-white rounded-2xl hover:bg-white hover:text-[#0A2540] transition">
-                    Explore Properties
-                </a>
+                <a href="contact.html" class="px-10 py-5 text-lg font-semibold border-2 border-white bg-white text-[#0A2540] rounded-2xl hover:bg-transparent hover:text-white transition">Schedule a Private Consultation</a>
+                <a href="listings.html" class="px-10 py-5 text-lg font-semibold border-2 border-white rounded-2xl hover:bg-white hover:text-[#0A2540] transition">Explore Properties</a>
             </div>
         </div>
     </section>
@@ -108,7 +83,7 @@
         </div>
     </section>
 
-    <!-- FEATURED PROPERTIES (prices now use perfect lining numbers) -->
+    <!-- FEATURED PROPERTIES -->
     <section class="bg-white py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-end mb-12">
@@ -146,9 +121,6 @@
             </div>
         </div>
     </section>
-
-    <!-- TESTIMONIAL, COMMUNITY, CONTACT CTA, FOOTER (all numbers fixed) -->
-    <!-- (The rest of the code is unchanged for consistency – scroll to paste the full file) -->
 
     <!-- TESTIMONIAL -->
     <section class="max-w-3xl mx-auto px-6 py-24 text-center">
@@ -189,9 +161,7 @@
     <script>
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobile-menu');
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
+        hamburger.addEventListener('click', () => { mobileMenu.classList.toggle('active'); });
     </script>
 </body>
 </html>
