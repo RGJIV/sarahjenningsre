@@ -10,7 +10,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
         
-        body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; }
+        body { 
+            font-family: 'Cormorant Garamond', serif; 
+            line-height: 1.75;
+            font-variant-numeric: lining-nums tabular-nums; /* This fixes ALL numbers */
+        }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
         
@@ -43,7 +47,7 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
 
-            <!-- Classic Rectangular Phone Button -->
+            <!-- Phone with perfect lining numbers -->
             <a href="tel:8285534331" 
                class="hidden md:block px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">
                 828.553.4331
@@ -71,12 +75,10 @@
             <p class="text-4xl gold tracking-wide mb-8">Luxury Real Estate • Cashiers Valley, NC</p>
             <p class="max-w-xl mx-auto text-xl opacity-90">Timeless expertise. Personal service. Your trusted guide to extraordinary mountain homes in the Southern Blue Ridge.</p>
             <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
-                <!-- Classic Rectangular Navy Button -->
                 <a href="contact.html" 
                    class="px-10 py-5 text-lg font-semibold border-2 border-white bg-white text-[#0A2540] rounded-2xl hover:bg-transparent hover:text-white transition">
                     Schedule a Private Consultation
                 </a>
-                <!-- Classic Outlined Rectangular Button -->
                 <a href="listings.html" 
                    class="px-10 py-5 text-lg font-semibold border-2 border-white rounded-2xl hover:bg-white hover:text-[#0A2540] transition">
                     Explore Properties
@@ -105,7 +107,7 @@
         </div>
     </section>
 
-    <!-- FEATURED PROPERTIES -->
+    <!-- FEATURED PROPERTIES (prices now use perfect lining numbers) -->
     <section class="bg-white py-24">
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-end mb-12">
@@ -143,6 +145,9 @@
             </div>
         </div>
     </section>
+
+    <!-- TESTIMONIAL, COMMUNITY, CONTACT CTA, FOOTER (all numbers fixed) -->
+    <!-- (The rest of the code is unchanged for consistency – scroll to paste the full file) -->
 
     <!-- TESTIMONIAL -->
     <section class="max-w-3xl mx-auto px-6 py-24 text-center">
