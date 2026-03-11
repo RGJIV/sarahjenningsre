@@ -8,13 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&family=Cinzel:wght@400;700&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3 { font-family: 'Cinzel', serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .nav-link { font-family: 'Cinzel', serif; font-weight: 700; letter-spacing: 0.5px; }
         .hero { background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)), url('assets/images/hero/hero-main.jpg') center/cover no-repeat fixed; }
         .gold { color: #D4AF77; }
         .nav-link { transition: all 0.3s ease; }
-        .nav-link:hover { color: #D4AF77; letter-spacing: 0.5px; }
+        .nav-link:hover { color: #D4AF77; }
         .hamburger { cursor: pointer; }
         .mobile-menu { display: none; }
         .mobile-menu.active { display: flex; }
@@ -25,23 +26,15 @@
     <!-- NAV -->
     <nav class="bg-white shadow fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-            <!-- New Elegant Logo -->
+            <!-- New Elegant Wordmark Logo (Default) -->
             <a href="index.html" class="flex items-center gap-3">
-                <svg width="72" height="65" viewBox="0 0 72 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Mountains -->
-                    <path d="M0 55 L15 35 L30 50 L45 25 L65 48 L72 55 Z" fill="#0A2540"/>
-                    <!-- Luxury home roof -->
-                    <polygon points="33,42 45,27 57,42" fill="#D4AF77"/>
-                    <!-- House body -->
-                    <rect x="37" y="42" width="12" height="14" fill="#D4AF77"/>
-                </svg>
-                <div>
-                    <span class="text-3xl font-bold tracking-tighter">Sarah Jennings</span>
-                    <span class="block text-xs tracking-[2px] gold -mt-1">REAL ESTATE</span>
+                <div class="text-4xl font-bold tracking-tighter text-[#0A2540]">Sarah Jennings</div>
+                <div class="pl-3 border-l border-[#D4AF77]">
+                    <span class="block text-xs tracking-[3px] gold">REAL ESTATE</span>
                 </div>
             </a>
 
-            <!-- Desktop Menu -->
+            <!-- Desktop Menu (now in classic Cinzel font) -->
             <div class="hidden md:flex gap-10 text-sm font-medium">
                 <a href="about.html" class="nav-link">About</a>
                 <a href="listings.html" class="nav-link">Properties</a>
@@ -66,7 +59,10 @@
         </div>
     </nav>
 
-    <!-- HERO (unchanged except new font) -->
+    <!-- HERO, ABOUT TEASER, FEATURED PROPERTIES, TESTIMONIAL, COMMUNITY, CONTACT CTA, and FOOTER remain exactly the same as your last working version -->
+    <!-- (Full code continues below – paste everything) -->
+
+    <!-- HERO -->
     <section class="hero h-screen flex items-center text-white">
         <div class="max-w-4xl mx-auto px-6 text-center pt-16">
             <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6 tracking-tight">Sarah Jennings</h1>
@@ -78,9 +74,6 @@
             </div>
         </div>
     </section>
-
-    <!-- ABOUT TEASER, FEATURED PROPERTIES, TESTIMONIAL, COMMUNITY, CONTACT CTA, and FOOTER are unchanged (kept exactly as before for consistency) -->
-    <!-- (The full code below includes them all – just scroll past the comment to paste) -->
 
     <!-- ABOUT TEASER -->
     <section class="max-w-5xl mx-auto px-6 py-24">
