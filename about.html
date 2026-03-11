@@ -12,7 +12,11 @@
         body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; font-variant-numeric: lining-nums tabular-nums; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
-        .hero { background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)), url('assets/images/hero/hero-main.jpg') center/cover no-repeat fixed; }
+        .hero { 
+            background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)), 
+                        url('assets/images/hero/hero-main.jpg') center/cover no-repeat fixed; 
+            min-height: 40vh;
+        }
         .gold { color: #D4AF77; }
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
@@ -23,7 +27,7 @@
 </head>
 <body class="bg-[#F8F1E3] text-[#0A2540]">
 
-    <!-- NAV (matches your current index.html style) -->
+    <!-- NAV -->
     <nav class="bg-white shadow fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -50,8 +54,8 @@
         </div>
     </nav>
 
-    <!-- SHORTER HERO – PERFECTLY CENTERED TEXT -->
-    <section class="hero h-[45vh] flex items-center justify-center text-white">
+    <!-- SHORTER + PERFECTLY CENTERED HERO -->
+    <section class="hero flex items-center justify-center text-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6">About Sarah Jennings</h1>
             <p class="text-4xl gold tracking-wide">Partner & Co-Founder, Cashiers Valley Real Estate</p>
