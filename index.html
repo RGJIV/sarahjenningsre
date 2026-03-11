@@ -8,46 +8,20 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@400;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
+        
+        body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
+        
         .hero { background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)), url('assets/images/hero/hero-main.jpg') center/cover no-repeat fixed; }
         .gold { color: #D4AF77; }
+        
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
         .hamburger { cursor: pointer; }
         .mobile-menu { display: none; }
         .mobile-menu.active { display: flex; }
-
-        /* New Rectangular Multi-Line Border Button Style */
-        .btn-rect {
-            @apply px-10 py-5 font-semibold text-lg transition-all duration-300 border-2 rounded-2xl;
-        }
-        .btn-multi {
-            position: relative;
-            padding: 1.25rem 2.5rem;
-            border: 3px solid #0A2540;
-            background: transparent;
-            color: #0A2540;
-            font-weight: 600;
-            border-radius: 16px;
-        }
-        .btn-multi::after {
-            content: '';
-            position: absolute;
-            inset: 5px;
-            border: 1px solid #D4AF77;
-            border-radius: 12px;
-            pointer-events: none;
-        }
-        .btn-multi:hover {
-            background: #0A2540;
-            color: white;
-        }
-        .btn-multi:hover::after {
-            border-color: #D4AF77;
-        }
     </style>
 </head>
 <body class="bg-[#F8F1E3] text-[#0A2540]">
@@ -69,9 +43,9 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
 
-            <!-- New Rectangular Phone Button -->
+            <!-- Classic Rectangular Phone Button -->
             <a href="tel:8285534331" 
-               class="hidden md:block btn-rect border-[#0A2540] bg-white text-[#0A2540] hover:bg-[#0A2540] hover:text-white text-sm">
+               class="hidden md:block px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">
                 828.553.4331
             </a>
 
@@ -86,7 +60,7 @@
             <a href="listings.html" class="py-3 nav-link">Properties</a>
             <a href="community.html" class="py-3 nav-link">Community</a>
             <a href="contact.html" class="py-3 nav-link">Contact</a>
-            <a href="tel:8285534331" class="mt-6 btn-rect border-[#0A2540] bg-white text-[#0A2540] hover:bg-[#0A2540] hover:text-white text-sm">828.553.4331</a>
+            <a href="tel:8285534331" class="mt-6 px-8 py-4 border-2 border-[#0A2540] text-sm font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">828.553.4331</a>
         </div>
     </nav>
 
@@ -97,21 +71,19 @@
             <p class="text-4xl gold tracking-wide mb-8">Luxury Real Estate • Cashiers Valley, NC</p>
             <p class="max-w-xl mx-auto text-xl opacity-90">Timeless expertise. Personal service. Your trusted guide to extraordinary mountain homes in the Southern Blue Ridge.</p>
             <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
-                <!-- Multi-Line Border Button (your requested style) -->
+                <!-- Classic Rectangular Navy Button -->
                 <a href="contact.html" 
-                   class="btn-multi text-center">Schedule a Private Consultation</a>
-                
-                <!-- Clean Rectangular Outlined Button -->
+                   class="px-10 py-5 text-lg font-semibold border-2 border-white bg-white text-[#0A2540] rounded-2xl hover:bg-transparent hover:text-white transition">
+                    Schedule a Private Consultation
+                </a>
+                <!-- Classic Outlined Rectangular Button -->
                 <a href="listings.html" 
-                   class="btn-rect border-white text-white hover:bg-white hover:text-[#0A2540]">
+                   class="px-10 py-5 text-lg font-semibold border-2 border-white rounded-2xl hover:bg-white hover:text-[#0A2540] transition">
                     Explore Properties
                 </a>
             </div>
         </div>
     </section>
-
-    <!-- The rest of the site (about teaser, featured properties, testimonial, community, contact CTA, footer) remains exactly the same as your current elegant version for perfect consistency -->
-    <!-- (Full code continues below – paste the entire thing) -->
 
     <!-- ABOUT TEASER -->
     <section class="max-w-5xl mx-auto px-6 py-24">
