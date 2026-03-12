@@ -80,13 +80,11 @@
         </div>
     </section>
 
-    <!-- CONTACT INFO -->
+    <!-- CONTACT INFO – FIXED MOBILE ALIGNMENT -->
     <section class="max-w-5xl mx-auto px-6 py-24">
-        <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-                <img src="assets/images/headshot/sarah-contact.jpg" alt="Sarah Jennings" class="rounded-3xl shadow-2xl w-full">
-            </div>
-            <div class="space-y-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+            <!-- Contact details FIRST on mobile -->
+            <div class="order-1 md:order-2 space-y-10">
                 <a href="tel:8285534331" class="block text-6xl font-light tracking-widest hover:text-[#D4AF77] transition touch-target">828.553.4331</a>
                 <a href="mailto:sarah@cashiersvalley.com" class="block text-3xl hover:text-[#D4AF77] transition">sarah@cashiersvalley.com</a>
                 <div class="text-lg opacity-80">
@@ -97,6 +95,11 @@
                         class="mt-8 inline-block px-12 py-5 text-lg font-semibold border-2 border-[#1F2C24] bg-white text-[#1F2C24] rounded-2xl hover:bg-[#1F2C24] hover:text-white transition touch-target">
                     Save Sarah Jennings to My Phone
                 </button>
+            </div>
+            
+            <!-- Photo SECOND on mobile -->
+            <div class="order-2 md:order-1">
+                <img src="assets/images/headshot/sarah-contact.jpg" alt="Sarah Jennings" class="rounded-3xl shadow-2xl w-full">
             </div>
         </div>
     </section>
