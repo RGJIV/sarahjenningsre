@@ -25,11 +25,13 @@
         }
         .gold { color: #D4AF77; }
         
+        /* iOS Safari safe-area & notch fixes */
         nav { padding-top: env(safe-area-inset-top); }
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
         .hamburger { cursor: pointer; }
         
+        /* Large finger-friendly mobile menu */
         .mobile-menu { 
             display: none; 
             background: white; 
@@ -43,7 +45,7 @@
 </head>
 <body class="bg-[#F8F1E3] text-[#0A2540]">
 
-    <!-- NAV – exact order from the snippet you just sent -->
+    <!-- NAV – exact order you just showed -->
     <nav class="bg-white shadow fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -78,4 +80,30 @@
         </div>
     </nav>
 
-    <!-- HERO
+    <!-- HERO -->
+    <section class="hero flex items-center justify-center text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6 tracking-tight">Sarah Jennings</h1>
+            <p class="text-4xl gold tracking-wide mb-8">Luxury Real Estate • Cashiers Valley, NC</p>
+            <p class="max-w-xl mx-auto text-xl opacity-90">Timeless expertise. Personal service. Your trusted guide to extraordinary mountain homes in the Southern Blue Ridge.</p>
+            <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="contact.html" class="px-10 py-5 text-lg font-semibold border-2 border-white bg-white text-[#0A2540] rounded-2xl hover:bg-transparent hover:text-white transition">Schedule a Private Consultation</a>
+                <a href="listings.html" class="px-10 py-5 text-lg font-semibold border-2 border-white rounded-2xl hover:bg-white hover:text-[#0A2540] transition">Explore Properties</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT TEASER -->
+    <section class="max-w-5xl mx-auto px-6 py-24">
+        <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <img src="assets/images/headshot/sarah-jennings.jpg" alt="Sarah Jennings" class="rounded-3xl shadow-2xl w-full">
+                <p class="text-center text-sm mt-4 text-gray-500 font-medium">Sarah Jennings, Partner & Co-Founder</p>
+            </div>
+            <div>
+                <h2 class="text-5xl font-bold mb-8 leading-none">A Partner You Can Trust</h2>
+                <div class="prose text-lg leading-relaxed">
+                    <p>A native of Germantown, Maryland, I graduated from NC State University with a degree in Marketing and Communications. After building a successful career in high-end events and marketing in Washington, DC, my family and I moved to Cashiers to raise our two boys.</p>
+                    <p>Today, as a founding Partner at Cashiers Valley Real Estate, I bring the same dedication, attention to detail, and personal touch to every client I serve.</p>
+                </div>
+                <a href="about.html" class="inline-flex items-center gap-3 mt-8 text-sm font
