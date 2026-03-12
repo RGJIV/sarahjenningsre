@@ -25,7 +25,12 @@
         .nav-link:hover { color: #D4AF77; }
         
         .mobile-menu { 
-            display: none; position: fixed; inset: 0; background: white; z-index: 9999; padding-top: env(safe-area-inset-top);
+            display: none; 
+            position: fixed; 
+            inset: 0; 
+            background: white; 
+            z-index: 9999; 
+            padding-top: env(safe-area-inset-top);
         }
         .mobile-menu.active { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2.5rem; }
         .touch-target { min-height: 48px; }
@@ -33,7 +38,7 @@
 </head>
 <body class="bg-[#F8F1E3] text-[#1F2C24]">
 
-    <!-- NAV (same green as above) -->
+    <!-- NAV (full) -->
     <nav class="bg-[#1F2C24] text-white fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -49,7 +54,9 @@
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
             <a href="tel:8285534331" class="hidden md:block px-8 py-4 border-2 border-white text-sm font-semibold rounded-2xl hover:bg-white hover:text-[#1F2C24] transition touch-target">828.553.4331</a>
-            <div class="md:hidden hamburger text-3xl cursor-pointer" id="hamburger"><i class="fa-solid fa-bars"></i></div>
+            <div class="md:hidden hamburger text-3xl cursor-pointer" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
         <div class="mobile-menu flex-col items-center py-12 text-2xl font-medium text-[#1F2C24] md:hidden" id="mobile-menu">
             <a href="listings.html" class="py-6 nav-link touch-target">Properties</a>
@@ -72,7 +79,9 @@
     <!-- BIO -->
     <section class="max-w-5xl mx-auto px-6 py-24">
         <div class="grid md:grid-cols-2 gap-16 items-center">
-            <div><img src="assets/images/headshot/sarah-jennings.jpg" alt="Sarah Jennings" class="rounded-3xl shadow-2xl w-full"></div>
+            <div>
+                <img src="assets/images/headshot/sarah-jennings.jpg" alt="Sarah Jennings" class="rounded-3xl shadow-2xl w-full">
+            </div>
             <div class="prose text-lg leading-relaxed">
                 <p>A native of Germantown, Maryland, I graduated from NC State University with a degree in Marketing and Communications in 2002. My early career was spent in Washington, DC, where I managed high-end corporate events and catering for Design Cuisine and the Smithsonian museums. I later founded my own successful marketing consulting firm before my family and I moved to Cashiers to raise our two teenage boys.</p>
                 <p>Upon arriving in the mountains, I handled marketing and events for Lonesome Valley (my husband’s family development). During the pandemic I transitioned into real estate sales, and in 2021 I proudly became a founding Partner of Cashiers Valley Real Estate.</p>
