@@ -20,7 +20,6 @@
         }
         .gold { color: #D4AF77; }
         
-        /* Fluid mobile-first typography */
         .hero h1 { font-size: clamp(2.75rem, 8vw + 1rem, 4.5rem); line-height: 1.05; }
         .hero p { font-size: clamp(1.75rem, 5vw, 2.75rem); }
         
@@ -36,13 +35,12 @@
             padding-top: env(safe-area-inset-top);
         }
         .mobile-menu.active { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2.5rem; }
-        
         .touch-target { min-height: 48px; }
     </style>
 </head>
 <body class="bg-[#F8F1E3] text-[#1F2C24]">
 
-    <!-- NAV – Official Cashiers Valley green -->
+    <!-- NAV -->
     <nav class="bg-[#1F2C24] text-white fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -51,22 +49,17 @@
                     <span class="block text-xs tracking-[3px] gold">REAL ESTATE</span>
                 </div>
             </a>
-
             <div class="hidden md:flex gap-10 text-sm font-medium">
                 <a href="listings.html" class="nav-link">Properties</a>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="community.html" class="nav-link">Community</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </div>
-
             <a href="tel:8285534331" class="hidden md:block px-8 py-4 border-2 border-white text-sm font-semibold rounded-2xl hover:bg-white hover:text-[#1F2C24] transition touch-target">828.553.4331</a>
-
             <div class="md:hidden hamburger text-3xl cursor-pointer" id="hamburger">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-
-        <!-- Full-screen mobile menu -->
         <div class="mobile-menu flex-col items-center py-12 text-2xl font-medium text-[#1F2C24] md:hidden" id="mobile-menu">
             <a href="listings.html" class="py-6 nav-link touch-target">Properties</a>
             <a href="about.html" class="py-6 nav-link touch-target">About</a>
