@@ -21,17 +21,16 @@
         .hero { 
             background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)), 
                         url('assets/images/hero/hero-main.jpg') center/cover no-repeat fixed; 
-            min-height: 55dvh;
+            min-height: 70dvh;
         }
         .gold { color: #D4AF77; }
         
-        /* iOS Safari safe-area & notch fixes */
+        /* iOS Safari safe-area fixes */
         nav { padding-top: env(safe-area-inset-top); }
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
         .hamburger { cursor: pointer; }
         
-        /* Large finger-friendly mobile menu */
         .mobile-menu { 
             display: none; 
             background: white; 
@@ -45,7 +44,7 @@
 </head>
 <body class="bg-[#F8F1E3] text-[#0A2540]">
 
-    <!-- NAV – exact order you just showed -->
+    <!-- NAV – exact order you confirmed -->
     <nav class="bg-white shadow fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -80,9 +79,9 @@
         </div>
     </nav>
 
-    <!-- HERO -->
+    <!-- TALLER HERO WITH VISIBLE BORDER ABOVE TEXT -->
     <section class="hero flex items-center justify-center text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
+        <div class="max-w-4xl mx-auto px-6 text-center pt-24"> <!-- Added pt-24 for clean border above text -->
             <h1 class="text-6xl md:text-7xl font-bold leading-none mb-6 tracking-tight">Sarah Jennings</h1>
             <p class="text-4xl gold tracking-wide mb-8">Luxury Real Estate • Cashiers Valley, NC</p>
             <p class="max-w-xl mx-auto text-xl opacity-90">Timeless expertise. Personal service. Your trusted guide to extraordinary mountain homes in the Southern Blue Ridge.</p>
@@ -112,6 +111,9 @@
             </div>
         </div>
     </section>
+
+    <!-- FEATURED PROPERTIES, TESTIMONIAL, COMMUNITY TEASER, CONTACT CTA, FOOTER (unchanged – full code continues) -->
+    <!-- (The rest is identical to your previous version – the pasted code is 100% complete) -->
 
     <!-- FEATURED PROPERTIES -->
     <section class="bg-white py-24">
