@@ -106,4 +106,94 @@
                     <p>A native of Germantown, Maryland, I graduated from NC State University with a degree in Marketing and Communications. After building a successful career in high-end events and marketing in Washington, DC, my family and I moved to Cashiers to raise our two boys.</p>
                     <p>Today, as a founding Partner at Cashiers Valley Real Estate, I bring the same dedication, attention to detail, and personal touch to every client I serve.</p>
                 </div>
-                <a href="about.html" class="inline-flex items-center gap-3 mt-8 text-sm font
+                <a href="about.html" class="inline-flex items-center gap-3 mt-8 text-sm font-medium gold hover:text-[#0A2540] transition">
+                    Read My Full Story <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROPERTIES -->
+    <section class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-5xl font-bold">Featured Properties</h2>
+                    <p class="text-gray-600 mt-2">Exclusive listings &amp; carefully selected homes</p>
+                </div>
+                <a href="listings.html" class="hidden md:flex items-center gap-2 text-sm font-medium gold hover:text-[#0A2540]">View All Properties <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="group bg-[#F8F1E3] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+                    <img src="https://picsum.photos/id/1016/600/400" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-8">
+                        <p class="text-xs gold tracking-widest">3 BED • 3.5 BATH • CASHIERS</p>
+                        <p class="text-3xl font-semibold mt-1">$1,095,000</p>
+                        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" class="text-sm gold hover:underline mt-4 block">View Details →</a>
+                    </div>
+                </div>
+                <div class="group bg-[#F8F1E3] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+                    <img src="https://picsum.photos/id/870/600/400" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-8">
+                        <p class="text-xs gold tracking-widest">4 BED • 5 BATH • CASHIERS</p>
+                        <p class="text-3xl font-semibold mt-1">$2,695,000</p>
+                        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" class="text-sm gold hover:underline mt-4 block">View Details →</a>
+                    </div>
+                </div>
+                <div class="group bg-[#F8F1E3] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+                    <img src="https://picsum.photos/id/201/600/400" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-8">
+                        <p class="text-xs gold tracking-widest">5 BED • 6 BATH • HIGHLANDS</p>
+                        <p class="text-3xl font-semibold mt-1">$3,850,000</p>
+                        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" class="text-sm gold hover:underline mt-4 block">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="max-w-3xl mx-auto px-6 py-24 text-center">
+        <div class="italic text-2xl leading-relaxed">"I was so impressed with Sarah Jennings as the realtor we chose to sell our home! She is extremely knowledgeable about the market in the area and worked diligently to make the deal we were looking for. She is an outstanding agent and a wonderful person!"</div>
+        <p class="mt-8 text-sm font-medium">— Recent Client, Cashiers Valley</p>
+    </section>
+
+    <!-- COMMUNITY TEASER -->
+    <section class="bg-white py-24">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-12">Deeply Rooted in Cashiers</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Jackson County Tourism Development Authority</div>
+                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Summit Charter School Foundation (Board Chair)</div>
+                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Cashiers Area Chamber • Boys &amp; Girls Club • Festival of Trees</div>
+            </div>
+            <a href="community.html" class="mt-12 inline-block text-sm font-medium gold hover:text-[#0A2540]">Learn More About My Community Involvement →</a>
+        </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="bg-[#0A2540] text-white py-24">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-8">Let’s Find Your Mountain Home</h2>
+            <p class="text-xl mb-10">I personally answer every call, text, and email.</p>
+            <a href="tel:8285534331" class="block text-5xl font-light tracking-widest hover:text-[#D4AF77] transition">828.553.4331</a>
+            <a href="mailto:sarah@cashiersvalley.com" class="block mt-6 text-2xl hover:text-[#D4AF77]">sarah@cashiersvalley.com</a>
+            <p class="mt-12 text-sm opacity-70">404 Highway 107 S • Cashiers, NC 28717</p>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 text-center text-xs text-gray-500 border-t">
+        <p>Sarah Jennings • Partner, Cashiers Valley Real Estate • © 2026</p>
+        <p class="mt-2">Proudly serving Cashiers, Highlands &amp; the Southern Blue Ridge Mountains</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
