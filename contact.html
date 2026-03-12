@@ -24,17 +24,48 @@
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
         
-        .mobile-menu { display: none; position: fixed; inset: 0; background: white; z-index: 9999; padding-top: env(safe-area-inset-top); }
+        .mobile-menu { 
+            display: none; 
+            position: fixed; 
+            inset: 0; 
+            background: white; 
+            z-index: 9999; 
+            padding-top: env(safe-area-inset-top);
+        }
         .mobile-menu.active { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2.5rem; }
         .touch-target { min-height: 48px; }
     </style>
 </head>
 <body class="bg-[#F8F1E3] text-[#1F2C24]">
 
-    <!-- NAV same green -->
+    <!-- NAV (full) -->
     <nav class="bg-[#1F2C24] text-white fixed w-full z-50">
-        <!-- (identical nav code as index.html – omitted here for brevity but copy exactly from index.html) -->
-        <!-- ... same nav HTML as above ... -->
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <div class="logo-name text-3xl md:text-4xl tracking-tighter">Sarah Jennings</div>
+                <div class="pl-3 border-l border-[#D4AF77]">
+                    <span class="block text-xs tracking-[3px] gold">REAL ESTATE</span>
+                </div>
+            </a>
+            <div class="hidden md:flex gap-10 text-sm font-medium">
+                <a href="listings.html" class="nav-link">Properties</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="tel:8285534331" class="hidden md:block px-8 py-4 border-2 border-white text-sm font-semibold rounded-2xl hover:bg-white hover:text-[#1F2C24] transition touch-target">828.553.4331</a>
+            <div class="md:hidden hamburger text-3xl cursor-pointer" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="mobile-menu flex-col items-center py-12 text-2xl font-medium text-[#1F2C24] md:hidden" id="mobile-menu">
+            <a href="listings.html" class="py-6 nav-link touch-target">Properties</a>
+            <a href="about.html" class="py-6 nav-link touch-target">About</a>
+            <a href="community.html" class="py-6 nav-link touch-target">Community</a>
+            <a href="contact.html" class="py-6 nav-link touch-target">Contact</a>
+            <a href="tel:8285534331" class="mt-8 px-12 py-5 border-2 border-[#1F2C24] text-lg font-semibold rounded-2xl hover:bg-[#1F2C24] hover:text-white transition touch-target">Call 828.553.4331</a>
+            <button onclick="document.getElementById('mobile-menu').classList.remove('active')" class="mt-12 text-sm text-gray-500 touch-target">Close Menu</button>
+        </div>
     </nav>
 
     <!-- HERO -->
@@ -54,8 +85,12 @@
             <div class="space-y-10">
                 <a href="tel:8285534331" class="block text-6xl font-light tracking-widest hover:text-[#D4AF77] transition touch-target">828.553.4331</a>
                 <a href="mailto:sarah@cashiersvalley.com" class="block text-3xl hover:text-[#D4AF77] transition">sarah@cashiersvalley.com</a>
-                <div class="text-lg opacity-80">404 Highway 107 S<br>Cashiers, NC 28717</div>
-                <button onclick="saveToContacts()" class="mt-8 inline-block px-12 py-5 text-lg font-semibold border-2 border-[#1F2C24] bg-white text-[#1F2C24] rounded-2xl hover:bg-[#1F2C24] hover:text-white transition touch-target">
+                <div class="text-lg opacity-80">
+                    404 Highway 107 S<br>
+                    Cashiers, NC 28717
+                </div>
+                <button onclick="saveToContacts()" 
+                        class="mt-8 inline-block px-12 py-5 text-lg font-semibold border-2 border-[#1F2C24] bg-white text-[#1F2C24] rounded-2xl hover:bg-[#1F2C24] hover:text-white transition touch-target">
                     Save Sarah Jennings to My Phone
                 </button>
             </div>
@@ -83,8 +118,11 @@ END:VCARD`;
             const blob = new Blob([vcard], { type: 'text/vcard' });
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
-            link.href = url; link.download = 'Sarah-Jennings.vcf';
-            document.body.appendChild(link); link.click(); document.body.removeChild(link);
+            link.href = url;
+            link.download = 'Sarah-Jennings.vcf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
         const hamburger = document.getElementById('hamburger');
         const mobileMenu = document.getElementById('mobile-menu');
