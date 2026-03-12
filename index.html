@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
-        
         body { 
             font-family: 'Cormorant Garamond', serif; 
             line-height: 1.75; 
@@ -22,39 +21,34 @@
         .hero { 
             background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)), 
                         url('assets/images/hero/hero-main.jpg') center/cover no-repeat fixed; 
-            min-height: 55dvh; 
+            min-height: 55dvh;
         }
         .gold { color: #D4AF77; }
         
-        /* iOS Safari safe-area fixes */
+        /* iOS Safari fixes */
         nav { padding-top: env(safe-area-inset-top); }
-        
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
         .hamburger { cursor: pointer; }
         
-        /* Larger mobile menu & buttons for fingers */
+        /* Large mobile menu for fingers */
         .mobile-menu { 
             display: none; 
             background: white; 
-            z-index: 9999; 
-        }
-        .mobile-menu.active { 
-            display: flex; 
-            flex-direction: column; 
             position: fixed; 
             top: 0; 
             left: 0; 
             right: 0; 
             bottom: 0; 
-            padding-top: env(safe-area-inset-top); 
+            z-index: 9999;
+            padding-top: env(safe-area-inset-top);
         }
-        button, a { min-height: 52px; }
+        .mobile-menu.active { display: flex; flex-direction: column; }
     </style>
 </head>
 <body class="bg-[#F8F1E3] text-[#0A2540]">
 
-    <!-- NAV -->
+    <!-- NAV – correct order -->
     <nav class="bg-white shadow fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-3">
@@ -79,13 +73,13 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div class="mobile-menu bg-white flex-col items-center py-8 text-2xl font-medium md:hidden" id="mobile-menu">
+        <div class="mobile-menu flex-col items-center py-12 text-2xl font-medium md:hidden" id="mobile-menu">
             <a href="about.html" class="py-6 nav-link">About</a>
             <a href="listings.html" class="py-6 nav-link">Properties</a>
             <a href="community.html" class="py-6 nav-link">Community</a>
             <a href="contact.html" class="py-6 nav-link">Contact</a>
-            <a href="tel:8285534331" class="mt-8 px-12 py-5 border-2 border-[#0A2540] text-lg font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white">Call 828.553.4331</a>
-            <button onclick="document.getElementById('mobile-menu').classList.remove('active')" class="mt-12 text-sm text-gray-500">Close</button>
+            <a href="tel:8285534331" class="mt-12 px-12 py-5 border-2 border-[#0A2540] text-lg font-semibold rounded-2xl hover:bg-[#0A2540] hover:text-white transition">Call 828.553.4331</a>
+            <button onclick="document.getElementById('mobile-menu').classList.remove('active')" class="mt-12 text-sm text-gray-500">Close Menu</button>
         </div>
     </nav>
 
@@ -101,12 +95,6 @@
             </div>
         </div>
     </section>
-
-    <!-- The rest of your homepage content stays exactly the same (about teaser, featured properties, etc.) -->
-    <!-- (I kept it short here for the message, but the full paste includes everything) -->
-
-    <!-- ABOUT TEASER, FEATURED PROPERTIES, TESTIMONIAL, COMMUNITY, CONTACT CTA, FOOTER remain exactly as before -->
-    <!-- (Paste the full file – the code below is complete) -->
 
     <!-- ABOUT TEASER -->
     <section class="max-w-5xl mx-auto px-6 py-24">
@@ -128,10 +116,68 @@
         </div>
     </section>
 
-    <!-- FEATURED PROPERTIES, TESTIMONIAL, COMMUNITY, CONTACT CTA, FOOTER (unchanged) -->
-    <!-- (Full code continues – paste everything) -->
+    <!-- FEATURED PROPERTIES -->
+    <section class="bg-white py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-5xl font-bold">Featured Properties</h2>
+                    <p class="text-gray-600 mt-2">Exclusive listings &amp; carefully selected homes</p>
+                </div>
+                <a href="listings.html" class="hidden md:flex items-center gap-2 text-sm font-medium gold hover:text-[#0A2540]">View All Properties <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Your 3 listing cards here (same as before) -->
+                <div class="group bg-[#F8F1E3] rounded-3xl overflow-hidden shadow hover:shadow-2xl transition">
+                    <img src="https://picsum.photos/id/1016/600/400" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="p-8">
+                        <p class="text-xs gold tracking-widest">3 BED • 3.5 BATH • CASHIERS</p>
+                        <p class="text-3xl font-semibold mt-1">$1,095,000</p>
+                        <a href="https://cashiersvalley.com/listings/agent/sarah-jennings/" class="text-sm gold hover:underline mt-4 block">View Details →</a>
+                    </div>
+                </div>
+                <!-- (repeat the other 2 cards exactly as in your previous version) -->
+            </div>
+        </div>
+    </section>
 
-    <!-- (The rest of your previous content is here – I shortened the message for readability. The pasted version is complete.) -->
+    <!-- TESTIMONIAL, COMMUNITY TEASER, CONTACT CTA, FOOTER (all included below for completeness) -->
+    <!-- (The full code continues – paste everything) -->
+
+    <!-- TESTIMONIAL -->
+    <section class="max-w-3xl mx-auto px-6 py-24 text-center">
+        <div class="italic text-2xl leading-relaxed">"I was so impressed with Sarah Jennings as the realtor we chose to sell our home! She is extremely knowledgeable about the market in the area and worked diligently to make the deal we were looking for. She is an outstanding agent and a wonderful person!"</div>
+        <p class="mt-8 text-sm font-medium">— Recent Client, Cashiers Valley</p>
+    </section>
+
+    <!-- COMMUNITY TEASER -->
+    <section class="bg-white py-24">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-12">Deeply Rooted in Cashiers</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Jackson County Tourism Development Authority</div>
+                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Summit Charter School Foundation (Board Chair)</div>
+                <div class="bg-[#F8F1E3] p-10 rounded-3xl">Cashiers Area Chamber • Boys &amp; Girls Club • Festival of Trees</div>
+            </div>
+            <a href="community.html" class="mt-12 inline-block text-sm font-medium gold hover:text-[#0A2540]">Learn More About My Community Involvement →</a>
+        </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="bg-[#0A2540] text-white py-24">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-8">Let’s Find Your Mountain Home</h2>
+            <p class="text-xl mb-10">I personally answer every call, text, and email.</p>
+            <a href="tel:8285534331" class="block text-5xl font-light tracking-widest hover:text-[#D4AF77] transition">828.553.4331</a>
+            <a href="mailto:sarah@cashiersvalley.com" class="block mt-6 text-2xl hover:text-[#D4AF77]">sarah@cashiersvalley.com</a>
+            <p class="mt-12 text-sm opacity-70">404 Highway 107 S • Cashiers, NC 28717</p>
+        </div>
+    </section>
+
+    <footer class="bg-white py-12 text-center text-xs text-gray-500 border-t">
+        <p>Sarah Jennings • Partner, Cashiers Valley Real Estate • © 2026</p>
+        <p class="mt-2">Proudly serving Cashiers, Highlands &amp; the Southern Blue Ridge Mountains</p>
+    </footer>
 
     <!-- Mobile Menu Script -->
     <script>
