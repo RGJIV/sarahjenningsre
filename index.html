@@ -8,39 +8,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:ital,wght@400;700&display=swap');
         body { 
-            font-family: 'Cormorant Garamond', serif; 
+            font-family: 'Crimson Text', serif; 
             line-height: 1.75; 
             font-variant-numeric: lining-nums tabular-nums; 
         }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
-        
+        .nav-link, .logo-name { 
+            font-family: 'Crimson Text', serif; 
+            font-weight: 700; 
+            letter-spacing: 0.5px; 
+        }
         .hero { 
-            background: linear-gradient(rgba(31,44,36,0.72), rgba(31,44,36,0.72)), 
+            background: linear-gradient(rgba(10,37,64,0.72), rgba(10,37,64,0.72)), 
                         url('assets/images/hero/hero-main.jpg') center/cover no-repeat fixed; 
-            min-height: 100dvh;
+            height: 50vh;
         }
         .gold { color: #D4AF77; }
-        
-        .hero h1 { font-size: clamp(2.75rem, 8vw + 1rem, 4.5rem); line-height: 1.05; }
-        .hero p { font-size: clamp(1.75rem, 5vw, 2.75rem); }
-        
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
-        
-        .mobile-menu { 
-            display: none; 
-            position: fixed; 
-            inset: 0; 
-            background: white; 
-            z-index: 9999; 
-            padding-top: env(safe-area-inset-top);
-        }
-        .mobile-menu.active { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 2.5rem; }
-        .touch-target { min-height: 48px; }
-    </style>
+        .hamburger { cursor: pointer; }
+        .mobile-menu { display: none; }
+        .mobile-menu.active { display: flex; }
+</style>
 </head>
 <body class="bg-[#F8F1E3] text-[#1F2C24]">
 
