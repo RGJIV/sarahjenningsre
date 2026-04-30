@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Cormorant+Garamond:wght@400;700&display=swap');
-        body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; }
+        body { font-family: 'Cormorant Garamond', serif; line-height: 1.75; font-variant-numeric: lining-nums tabular-nums; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; }
         .nav-link, .logo-name { font-family: 'Cormorant Garamond', serif; font-weight: 700; letter-spacing: 0.5px; }
         .hero { 
@@ -20,6 +20,9 @@
         .gold { color: #D4AF77; }
         .nav-link { transition: all 0.3s ease; }
         .nav-link:hover { color: #D4AF77; }
+        .hamburger { cursor: pointer; }
+        .mobile-menu { display: none; }
+        .mobile-menu.active { display: flex; }
     </style>
 </head>
 <body class="bg-[#F8F1E3] text-[#0A2540]">
